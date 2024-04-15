@@ -28,7 +28,7 @@ def extract_table_content(url, input_data):
 
 
     driver.quit()
-extract_table_content("https://www.data.bsee.gov/Well/APD/Default.aspx",608164025600)
+extract_table_content("https://www.data.bsee.gov/Well/APD/Default.aspx",608164025600)    #GIVE THE INPUTS HERE
 
 import os
 
