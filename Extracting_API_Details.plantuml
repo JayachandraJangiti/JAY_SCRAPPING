@@ -1,0 +1,81 @@
+@startuml package_development
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor red
+skinparam titleBackgroundColor Tomato
+
+title Python Package Development \n Recommended Practices
+
+start
+
+    partition "User Point of View" {
+
+
+        :Give Url;
+            note right
+                Give Website Url to the code in specified function
+                
+            end note
+
+        :Give API ID;
+            note right
+                Give API ID to the code in specified function
+            end note
+
+        :Run code;
+            note right
+                Run the code in an IDE
+            end note
+
+    }
+
+    partition "Machine Point of View" {
+    :Open Chrome;
+        note right
+            Given url will be opened in chrome webdriver using driver.get() method.
+        end note
+    :Insert API ID into Text Box;
+        note right
+            Given API ID will be given to text box which is accessed uniquely using by.XPATH method.
+        end note
+    :Click on Submit Query Button;
+        note right
+            Submit query buttons are clicked using Element.click() method, then content will be shown.
+        end note
+    :Click on CSV button;
+        note right
+            CSV_Button is clicked, So that the details shown are downloaded as CSV file.
+        end note
+    :Temporary files are downloaded;
+        note right
+            Temporary files are downloaded due to less time for downloading.
+        end note
+    :Change file extensions of temporary files;
+        note right
+            Change file extensions of temporary files to CSV, so that the temporary files are changed to CSV.
+        end note
+    :CSV files are filtered;
+        note right
+            CSV files of a specified directory are filtered using OS module.
+        end note
+    :Get path of CSV file;
+        note right
+            Path of newly created CSV file will be copied.
+        end note
+    :Read CSV;
+        note right
+            CSV file are read as dataframe using pandas.read_csv() method.
+        end note
+    :Output;
+        note right
+            Details shown will be printed as a Dataframe.
+        end note
+    } 
+stop
+
+footer
+%date("yyyy.MM.02' at 'HH:mm")
+%filename()
+end footer
+
+@enduml
