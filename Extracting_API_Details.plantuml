@@ -74,7 +74,7 @@ start
 stop
 
 footer
-%date("yyyy.MM.02' at 'HH:mm")
+%date("yyyy.MM.dd' at 'HH:mm")
 %filename()
 end footer
 
